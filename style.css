@@ -1,0 +1,278 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  background-color: #1d3e39;
+  color: #f9ebe0;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  max-width: 1100px;
+  padding: 60px 40px;
+  width: 100%;
+}
+
+/* Navbar */
+
+.navbar {
+  align-items: center;
+  font-family: "Syne", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  padding: 40px;
+  width: 100%;
+}
+
+.website-name {
+  font-size: 20px;
+}
+
+.website-name span {
+  font-weight: 400;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+}
+
+.menu-item {
+  font-size: 18px;
+  font-weight: 600;
+  list-style-type: none;
+  transition: 0.4s;
+}
+
+.menu-link {
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  color: #ce796b;
+}
+
+/* Header */
+
+.header {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.presentation-container {
+  margin-bottom: 80px;
+}
+
+.secondary-text {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+}
+
+.main-text {
+  font-family: "Syne", sans-serif;
+  font-size: 82px;
+  line-height: 1.1;
+  max-width: 900px;
+}
+
+.arrow {
+  height: 120px;
+}
+
+/* About section */
+
+.about-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text {
+  font-family: "DM Sans", sans-serif;
+  font-size: 36px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+/* Projects section */
+
+.section-title {
+  font-family: "Syne", sans-serif;
+  font-size: 82px;
+  margin-bottom: 40px;
+}
+
+.projects-container {
+  margin: 0 auto;
+  max-width: 620px;
+}
+
+.projects-list {
+  margin-bottom: 40px;
+}
+
+.github-link {
+  border-bottom: 1px solid #f9ebe0;
+  font-family: "Syne", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.github-link:hover {
+  border-bottom: 1px solid transparent;
+  color: #ce796b;
+}
+
+.project {
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+}
+
+.fa-circle {
+  color: #f9ebe0;
+}
+
+.project-info {
+  margin: 30px;
+}
+
+.project-name {
+  color: #f9ebe0;
+  font-family: "Syne", sans-serif;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.project-description {
+  color: #f9ebe0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+}
+
+/* Contact section */
+
+.contact-title {
+  font-family: "Syne", sans-serif;
+  font-size: 82px;
+  line-height: 1.1;
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+.contact-elements-container {
+  align-items: center;
+  display: flex;
+  font-family: "DM Sans", sans-serif;
+  justify-content: space-between;
+}
+
+.email-container {
+  font-size: 36px;
+}
+
+.email-link {
+  text-decoration: none;
+}
+
+.email-link::after {
+  background-color: #f9ebe0;
+  content: "";
+  display: block;
+  height: 1px;
+  transition: 0.4s;
+  width: 0;
+}
+
+.email-link:hover::after {
+  width: 100%;
+}
+
+.social-media-item {
+  font-size: 18px;
+  list-style-type: none;
+  margin: 20px 0;
+  text-align: right;
+}
+
+.social-media-link {
+  border-bottom: 1px solid #f9ebe0;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.social-media-link:hover {
+  border-bottom: 1px solid transparent;
+  color: #ce796b;
+}
+
+/* Footer */
+
+.footer {
+  align-items: center;
+  display: flex;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  justify-content: space-between;
+  max-width: 1100px;
+  padding: 40px;
+  width: 100%;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 800px) {
+  .main-text,
+  .section-title {
+    font-size: 72px;
+  }
+  .about-text {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .menu {
+    display: none;
+  }
+  .main-text,
+  .section-title {
+    font-size: 60px;
+  }
+  .contact-elements-container {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .social-media-item {
+    text-align: left;
+  }
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .credits {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .main-text,
+  .section-title {
+    font-size: 48px;
+  }
+}
