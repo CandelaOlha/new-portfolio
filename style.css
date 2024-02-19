@@ -25,7 +25,6 @@ html {
 /* Navbar */
 
 .navbar {
-  align-items: center;
   font-family: "Syne", sans-serif;
   display: flex;
   justify-content: space-between;
@@ -61,6 +60,94 @@ html {
 
 .menu-link:hover {
   color: #ce796b;
+}
+
+/* Mobile menu */
+
+.hamburger-menu {
+  align-items: flex-end;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 2;
+}
+
+.hamburger-menu-closed {
+  align-items: center;
+  justify-content: stretch;
+}
+
+.line {
+  background-color: #f9ebe0;
+  height: 2px;
+}
+
+.line-one {
+  transition: 0.4s;
+  width: 40px;
+}
+
+.line-one-closed {
+  background-color: #f9f2ed;
+  transform: rotate(45deg);
+}
+
+.line-two {
+  transition: 0.5s;
+  width: 25px;
+}
+
+.line-two-closed {
+  background-color: #f9f2ed;
+  position: relative;
+  top: -2px;
+  transform: rotate(-45deg);
+  width: 40px;
+}
+
+.mobile-menu-container {
+  background-color: #1d3e39;
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 20px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: 0.4s ease-in-out;
+  width: 100%;
+}
+
+/* Class to show mobile menu with JS */
+
+.show-mobile-menu {
+  height: 100%;
+  padding: 20px;
+  z-index: 1;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu-item {
+  font-family: "Syne", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  list-style-type: none;
+  margin: 20px;
+}
+
+.mobile-menu-link {
+  color: #f9f2ed;
+  font-size: 24px;
+  text-decoration: none;
 }
 
 /* Header */
@@ -249,6 +336,9 @@ html {
 @media only screen and (max-width: 620px) {
   .menu {
     display: none;
+  }
+  .hamburger-menu {
+    display: flex;
   }
   .main-text,
   .section-title {
