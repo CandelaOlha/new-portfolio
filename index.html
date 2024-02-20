@@ -15,6 +15,10 @@
       src="https://kit.fontawesome.com/19e3c4985f.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Candela Olha | UX designer & front-end developer</title>
   </head>
   <body>
@@ -55,16 +59,24 @@
       <!-- Header -->
       <header class="header section">
         <div class="presentation-container">
-          <p class="secondary-text">👋 Hi there! My name is Candela</p>
-          <h2 class="main-text">
+          <p class="secondary-text animate__animated animate__fadeInUp">
+            👋 Hi there! My name is Candela
+          </p>
+          <h2 class="main-text animate__animated animate__fadeInUp">
             I&apos;m a UX designer &#38; front-end developer from Buenos Aires
           </h2>
         </div>
-        <img src="./assets/arrow.svg" alt="Arrow" class="arrow" />
+        <img
+          src="./assets/arrow.svg"
+          alt="Arrow"
+          class="arrow animate__animated animate__fadeInUp"
+        />
       </header>
       <!-- About section -->
       <section class="about-section section" id="about">
-        <div class="about-text-container">
+        <div
+          class="about-text-container wow animate__animated animate__fadeInUp"
+        >
           <p class="about-text">
             I have a degree in Communications and specialize in UX Design, but I
             currently work as a front-end developer.
@@ -83,9 +95,11 @@
       </section>
       <!-- Projects section -->
       <section class="projects-section section" id="projects">
-        <h3 class="section-title">Projects</h3>
+        <h3 class="section-title wow animate__animated animate__fadeInUp">
+          Projects
+        </h3>
         <div class="projects-container">
-          <div class="projects-list">
+          <div class="projects-list wow animate__animated animate__fadeInUp">
             <a
               href="https://candelaolha.github.io/red-square/"
               target="_blank"
@@ -155,18 +169,20 @@
           <a
             href="https://github.com/CandelaOlha"
             target="_blank"
-            class="github-link"
+            class="github-link wow animate__animated animate__fadeInUp"
             >See more on GitHub!</a
           >
         </div>
       </section>
       <!-- Contact section -->
       <section class="contact-section section" id="contact">
-        <h3 class="section-title contact-title">
+        <h3
+          class="section-title contact-title wow animate__animated animate__fadeInLeft"
+        >
           Looking for a front-end developer?
         </h3>
         <div class="contact-elements-container">
-          <div class="email-container">
+          <div class="email-container wow animate__animated animate__fadeInUp">
             <p class="email-text">Let&apos;s get in touch.</p>
             <a
               href="mailto:olhacandela@gmail.com"
@@ -176,7 +192,7 @@
               olhacandela@gmail.com
             </a>
           </div>
-          <ul class="social-media-menu">
+          <ul class="social-media-menu wow animate__animated animate__fadeInUp">
             <li class="social-media-item">
               <a
                 href="https://github.com/CandelaOlha"
@@ -205,11 +221,15 @@
         </div>
       </section>
       <!-- Footer -->
-      <footer class="footer">
+      <footer class="footer wow animate__animated animate__fadeInUp">
         <p class="credits"></p>
         <p class="footer-text">🌎 From Buenos Aires to the world</p>
       </footer>
     </div>
     <script src="index.js"></script>
+    <script src="wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

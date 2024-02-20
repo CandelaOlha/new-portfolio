@@ -348,6 +348,9 @@ html {
     align-items: flex-start;
     flex-direction: column;
   }
+  .email-container {
+    font-size: 24px;
+  }
   .social-media-item {
     text-align: left;
   }
